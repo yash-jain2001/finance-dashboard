@@ -1,6 +1,6 @@
 const SummaryCard = ({ title, amount, type }) => {
   return (
-    <div className="bg-white p-5 rounded-2xl shadow-sm border hover:shadow-md transition">
+    <div className="bg-white p-5 rounded-2xl w-1/3 shadow-sm border hover:shadow-md transition">
       <h3 className="text-gray-500 text-sm">{title}</h3>
 
       <p
