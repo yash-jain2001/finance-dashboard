@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import SummaryCard from "../components/SummaryCard";
 import BalanceChart from "../components/BalanceChart";
 import ExpensePieChart from "../components/PieChart";
+import TransactionsTable from "../components/TransactionTable";
 
 const Dashboard = () => {
   const transactions = useSelector((state) => state.transactions.transactions);
@@ -67,6 +68,7 @@ const Dashboard = () => {
           <BalanceChart data={chartData} />
           <ExpensePieChart data={pieData} />
         </div>
+        <TransactionsTable />
       </div>
     </div>
   );
