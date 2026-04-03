@@ -3,6 +3,7 @@ import SummaryCard from "../components/SummaryCard";
 import BalanceChart from "../components/BalanceChart";
 import ExpensePieChart from "../components/PieChart";
 import TransactionsTable from "../components/TransactionTable";
+import Insights from "../components/Insights";
 
 const Dashboard = () => {
   const transactions = useSelector((state) => state.transactions.transactions);
@@ -54,7 +55,7 @@ const Dashboard = () => {
   }));
 
   return (
-    <div>
+    <div className="">
       <h2 className="text-2xl font-bold mb-6">Dashboard Overview</h2>
 
       {/* Cards */}
@@ -64,11 +65,12 @@ const Dashboard = () => {
         <SummaryCard title="Income" amount={income} type="income" />
         <SummaryCard title="Expenses" amount={expenses} type="expense" />
         </div>
-        <div className="flex border w-full gap-4 mt-6">
+        <div className="flex w-full gap-4 mt-6">
           <BalanceChart data={chartData} />
           <ExpensePieChart data={pieData} />
         </div>
         <TransactionsTable />
+        <Insights />
       </div>
     </div>
   );

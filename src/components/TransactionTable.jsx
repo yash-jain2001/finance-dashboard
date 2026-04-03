@@ -100,7 +100,7 @@ const TransactionsTable = () => {
 
           <tbody>
             {processedData.map((t) => (
-              <tr key={t.id} className="border-b">
+              <tr key={t.id} className="border-b hover:bg-gray-50">
                 <td className="py-2">{t.date}</td>
                 <td>{t.category}</td>
                 <td

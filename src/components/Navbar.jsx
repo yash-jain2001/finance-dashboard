@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <div className="h-16 bg-white shadow flex items-center justify-between px-6">
-      <h1 className="text-lg font-semibold">Dashboard</h1>
+      <h1 className="text-2xl font-bold text-blue-600">Finance Dashboard💰</h1>
 
       <div className="flex items-center gap-4">
         <select
@@ -19,7 +19,9 @@ const Navbar = () => {
           <option value="admin">Admin</option>
         </select>
 
-        <div className="w-8 h-8 bg-gray-300 rounded-full" />
+        <div className="w-8 h-8 rounded-full">
+          <img src="https://avatars.githubusercontent.com/u/89932280?v=4" alt="user image" className="w-full h-full rounded-full object-cover" />
+        </div>
       </div>
     </div>
   );
